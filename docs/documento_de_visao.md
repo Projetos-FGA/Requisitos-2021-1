@@ -30,72 +30,41 @@
     9. CANVAS MVP
 
 ## Visão do Projeto
-- Para os alunos, monitores, professores e coordenadores de graduação da UnB que desejam gerenciar as suas monitorias do semestre. O UnB monitorias é uma plataforma web. Isso facilita o acesso às informações de todas as monitorias e do processo de candidatura à monitoria, pois podem ser acessadas a todo momento e em qualquer lugar por meio de um celular. Atualmente, as informações das monitorias estão dispersas entre diversas plataformas (sigaa, aprender) e redes sociais(facebook, whatsapp, telegram). Essa dispersão de informações dificulta o acesso à monitoria. Nosso produto tem como intuito unificar todo o processo de candidatura à monitoria, gerência e também acesso por parte dos alunos, professores e coordenadores. 
 ### 1. Introdução  
 #### 1.1. Declaração do Problema
 | Questionamento | Resposta |
-| :-- | :-- |
-| O problema  | Falta de um sistema para gestão de monitoria |
-| Afeta | Os alunos, monitores, professores e coordenadores de graduação |
-| Cujo impacto é | Informações dispersas e burocratização no processo de candidatura à monitoria  |
-| Uma solução de sucesso seria | Centralizar as informações em uma só plataforma |  
+| :--: | :--: |
+| O problema  | xxx |
+| Afeta | yyy |
+| Cujo impacto é | zzz |
+| Uma solução de sucesso seria | ttt |  
 
 &nbsp;
 #### 1.2. Objetivos do Projeto
-* Unificar todo o processo de candidatura à monitoria, gerência e também acesso por parte dos alunos, professores e coordenadores.   
-* Facilitar o acesso às informações do perfil e da disponibilidade dos monitores.  
-* Acesso rápido às informações sobre as monitorias selecionadas pelo aluno
-
+........
 
 &nbsp;
 ## 2. Stakeholders
 | Nome | Descrição | Responsabilidade |
-| :-- | :-- | :-- |
-|Aluno | Graduando da UnB| Selecionar as monitoria de sua preferência para receber as informações. Se candidatar a monitor se desejar |
-| Monitor | Aluno aceito no processo de candidatura a monitoria| Cadastra as informações referentes as monitorias que ministra |
-|Professor  | Ministra uma disciplina | Solicitar monitores para sua disciplina e avaliá-los|   
-| Coordenador | Responsável pelo processo de candidatura a monitoria| Laçar editais do processo de monitoria, avaliar e selecionar os alunos que serão monitores|
-| Equipe de desenvolvimento | Planejamento, desenvolvimento e manutenção da plataforma |Executar o projeto dentro do prazo estipulado com base no escopo de engenharia de requisitos |
+| :-- | :-- | :-- |  
+| Equipe de desenvolvimento | Planejamento, desenvolvimento e manutenção da plataforma de acordo com as premissas e regras de negócio dos investidores |Executar o projeto dentro do prazo estipulado com base no escopo de engenharia de requisitos previamente definido|
 
 &nbsp;
 ## 3. Visão Geral do Produto  
 ### 3.1. Declaração de Posição do Produto
 | Posição do produto | Descrição |
 |:--|:--|
-| Para|alunos, monitores, professores e coordenadores de graduação da UnB|
-| Quem | deseja gerenciar as suas monitorias do semestre |
-| O *UnB Monitorias* | é uma plataforma web de gestão de monitorias |
-| Que | facilita o acesso às informações de todas as monitorias e do processo de candidatura à monitoria, pois podem ser acessadas a todo momento e em qualquer lugar por meio de um celular |
-| Ao contrário | dos formulários em papel, das informações dispersas sobre a monitoria e do seu processo de candidatura |
-| Nosso produto | unifica todo o processo de candidatura à monitoria, gerência e também acesso por parte dos alunos, professores e coordenadores.  |
+| Quem | xxx |
+| O *UnB Monitorias* | xxx |
+| Que | xxx |
+| Ao contrário | xxx |
+| Nosso produto | xxx |
 
 &nbsp;
 ### 3.2. Escopo do Produto
 
 #### 3.2.1 Requisitos Funcionais
-* Cadastrar disciplina  
-* Registrar alunos  
-* Registrar monitores  
-* Registrar coordenadores  
-* Registrar professores  
-* Lançar edital/cadastrar monitoria  
-* Selecionar monitores  
-* Cadastrar plano de monitoria  
-* Avaliar monitor  
-* Autenticar usuários  
-* Registrar a candidatura do aluno à monitoria  
 
-&nbsp;
-#### 3.2.2 Requisitos não Funcionais
-* Versionamento via Github
-* React para front-end
-* Python para back-end
-* Telegram para comunicação interna
-* Microsoft teams para comunicação
-* VSCode como editor de texto
-* Pycharm como editor de texto
-
-&nbsp;
 ### 3.3 Mínimo Produto Viável (MVP)
 
 
@@ -111,17 +80,13 @@
 ### 5.1. Hardware  
 | Perfil | Tipo de Hardware | Configurações | Qtd. PLanejada | Prazo Estimado | Observação |
 |:----:|:----:|:----:|:----:|:----:|:----:|
-| Desenvolvedor | Computador | Intel I3; 4gb RAM | 6 | 02/08/2021 |
+| Desenvolvedor | Computador | Intel I3; 4gb RAM; | | |
 
 &nbsp;
 ### 5.2. Software  
 | Perfil | Tipo de Software | Nome da Ferramenta | Versão | Qtd. Licensas | Prazo Estimado | Observação |
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| Desenvolvedor | Editor de Código  | VSCode/Pycharm | - | Free | - | 06/08/2021 |
-| Desenvolvedor | Gerenciador de Versionamento  | Git | - | Free | - | 06/08/2021 |
-| Desenvolvedor | Comunicação  | Microsoft Teams / Telegram | - | Free | - | 06/08/2021 |
-| Desenvolvedor | Deploy  | Vercel | - | Free | - | 06/08/2021 |
-
+| - | - | - | - | - | - | - | 
 &nbsp;
 
 ## 6. Processo de Gerência de Projeto  
