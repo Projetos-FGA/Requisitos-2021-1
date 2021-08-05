@@ -227,6 +227,7 @@ Com base na avaliação elaborada é possível definir o risco e as prioridades 
    “ Engenharia de Software ” - Makron Books do Brasil Editora Ltda
 
 ### **9. Canvas MVP** 
+<p align="center">  <img src="../imgs/canvas_completo.jpg" width="800"></p>
 <p align="center">  <img src="../imgs/canvas_1.jpg" width="400"></p>
 <p align="center">  <img src="../imgs/canvas_2.jpg" width="400"></p>
 <p align="center">  <img src="../imgs/canvas_3.jpg" width="400"></p>
