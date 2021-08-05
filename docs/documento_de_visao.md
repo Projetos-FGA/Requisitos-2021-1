@@ -94,19 +94,6 @@
 | RF21 | Exibir Avisos gerais |
 | RF22 | Exibir todas as disciplinas com monitores cadastrados |
 
-
-* Cadastrar disciplina
-* Registrar alunos
-* Registrar monitores
-* Registrar coordenadores
-* Registrar professores
-* Lançar edital/cadastrar monitoria
-* Selecionar monitores
-* Cadastrar plano de monitoria
-* Avaliar monitor
-* Autenticar usuários
-* Registrar a candidatura do aluno à monitoria
-
 #### 3.2.2 Requisitos não Funcionais
 
 | Identificador | Requisito |
@@ -116,15 +103,6 @@
 | RNF03 | A plataforma deve seguir as recomendações para acessibilidae na WEB do WCAG |
 | RNF04 | A plataforma deve seguir boas práticas de usabilidade |
 | RNF05 | O sistema deve controlar o acesso por meio de permiçõoes para cada perfil de usuário |
-
-* Versionamento via Github
-* React para front-end
-* Python para back-end
-* Telegram para comunicação interna
-* Microsoft teams para comunicação
-* VSCode como editor de texto
-* Pycharm como editor de texto
-* Miro para construção de ideias
 
 #### 3.3 Mínimo Produto Viável (MVP)
 * Registrar alunos e coordenadores
