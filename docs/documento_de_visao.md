@@ -192,7 +192,10 @@ Análise quantitativa dos riscos e Impacto
 | 3 | Médio | de 41% a 60% | Impacto mediano, mas é facilmente recuperado |
 | 4 | Alto | de 61% a 80% | Impacto grande no desenvolvimento do projeto |
 | 5 | Muito Alto | acima de 80% | Impacto muito grande e pode inviabilizar o projeto |
+
 &nbsp;
+
+
 Levantamento de riscos
 | Risco | Descrição | Probabilidade | Impacto | Mitigação |
 | :----: | :----: | :----: | :----: | :----: |
