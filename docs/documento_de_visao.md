@@ -62,7 +62,7 @@
 |:-------------------|:----------|
 | Para | alunos, monitores, professores e coordenadores de graduação da UnB|
 | Quem | deseja gerenciar as suas monitorias do semestre |
-| O *UnB Monitorias* | deseja gerenciar as suas monitorias do semestre |
+| O *UnB Monitorias* | é uma plataforma web|
 | Que | facilita o acesso às informações de todas as monitorias e do processo de candidatura à monitoria, pois podem ser acessadas a todo momento e em qualquer lugar por meio de um celular |
 | Ao contrário | das informações dispersas sobre a monitoria e do seu processo de candidatura |
 | Nosso produto | unifica todo o processo de candidatura à monitoria, gerência e também acesso por parte dos alunos, professores e coordenadores. |
