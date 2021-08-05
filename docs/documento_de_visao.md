@@ -5,6 +5,7 @@
 | :-- | :-- | :-- | :-- |
 | 04/08/2021 | 0.0 | Estrutura do documento de visão|  Flavio Vieira |
 | 04/08/2021 | 1.0 | Preenchimento do documento de visão |  Todos |
+| 05/08/2021 | 1.1 | Ajuste de formatação no documento | Carla Cangussú |
 
 ## Sumário
     1. INTRODUÇÃO    
@@ -45,9 +46,9 @@
 &nbsp;
 #### 1.2. Objetivos do Projeto
 &nbsp;
-*Unificar todo o processo de candidatura à monitoria, gerência e também acesso por parte dos alunos, professores e coordenadores. 
-*Facilitar o acesso às informações do perfil e da disponibilidade dos monitores
-*Acesso rápido às informações sobre as monitorias selecionadas pelo aluno
+* Unificar todo o processo de candidatura à monitoria, gerência e também acesso por parte dos alunos, professores e coordenadores. 
+* Facilitar o acesso às informações do perfil e da disponibilidade dos monitores
+* Acesso rápido às informações sobre as monitorias selecionadas pelo aluno
 
 &nbsp;
 ## 2. Stakeholders
@@ -79,38 +80,38 @@
 &nbsp;
 #### 3.2.1 Requisitos Funcionais
 &nbsp;
-*Cadastrar disciplina
-*Registrar alunos
-*Registrar monitores
-*Registrar coordenadores
-*Registrar professores
-*Lançar edital/cadastrar monitoria
-*Selecionar monitores
-*Cadastrar plano de monitoria
-*Avaliar monitor
-*Autenticar usuários
-*Registrar a candidatura do aluno à monitoria
+* Cadastrar disciplina
+* Registrar alunos
+* Registrar monitores
+* Registrar coordenadores
+* Registrar professores
+* Lançar edital/cadastrar monitoria
+* Selecionar monitores
+* Cadastrar plano de monitoria
+* Avaliar monitor
+* Autenticar usuários
+* Registrar a candidatura do aluno à monitoria
 &nbsp;
 ### 3.2.2 Requisitos não Funcionais
 &nbsp;
-*Versionamento via Github
-*React para front-end
-*Python para back-end
-*Telegram para comunicação interna
-*Microsoft teams para comunicação
-*VSCode como editor de texto
-*Pycharm como editor de texto
-*Miro para construção de ideias
+* Versionamento via Github
+* React para front-end
+* Python para back-end
+* Telegram para comunicação interna
+* Microsoft teams para comunicação
+* VSCode como editor de texto
+* Pycharm como editor de texto
+* Miro para construção de ideias
 
 &nbsp;
 ### 3.3 Mínimo Produto Viável (MVP)
 &nbsp;
-*Registrar alunos e coordenadores
-*Cadastrar disciplina
-*Registrar candidatura do aluno à monitoria
-*Lançar um edital de monitoria
-*Selecionar monitores
-*Autenticar usuários
+* Registrar alunos e coordenadores
+* Cadastrar disciplina
+* Registrar candidatura do aluno à monitoria
+* Lançar um edital de monitoria
+* Selecionar monitores
+* Autenticar usuários
 
 &nbsp;
 ## 4. Visão Geral do Projeto  
@@ -212,11 +213,11 @@ Levantamento de riscos
 &nbsp;
 ## 7. Lições Aprendidas
 &nbsp;
-*Utilização do Kanban como uma metodologia de desenvolvimento
-*Especificação de requisitos
-*Fazer um MVP
-*Estrutura básica da visão do produto
-*Análise e gerenciamento de riscos
+* Utilização do Kanban como uma metodologia de desenvolvimento
+* Especificação de requisitos
+* Fazer um MVP
+* Estrutura básica da visão do produto
+* Análise e gerenciamento de riscos
 
 &nbsp;
 ## 8. Referências 
