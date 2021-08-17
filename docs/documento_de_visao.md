@@ -7,6 +7,7 @@
 | 04/08/2021 | 0.2 | Preenchimento do documento de visão |  Todos |
 | 05/08/2021 | 0.3 | Ajuste de formatação no documento | Carla Cangussú |
 | 05/08/2021 | 0.4 | Revisão do tópico gerenciamento de riscos e ajuste de formatação | Flávio Vieira |
+| 16/08/2021 | 0.5 | Atualizar lista de requisitos e adicionar o tipo, atributos e caracteríscas | Todos |
 
 ## Sumário
     1. INTRODUÇÃO    
@@ -69,40 +70,45 @@
 
 #### 3.2. Escopo do Produto
 #### 3.2.1 Requisitos Funcionais
-| Identificador | Descrição alto nível | 
-| :------------ | :-------- |
-| RF01 | Permitir ao Aluno crie, edite, faça login e apague sua conta |
-| RF02 | Permitir ao Aluno se candidatar a uma vaga de monitoria em uma disciplina |
-| RF03 | Permitir ao Aluno seguir uma monitoria de uma disciplina |
-| RF04 | Permitir ao Aluno consultar local, horário e agendar atendimento com um monitor |
-| RF05 | Permitir ao Aluno avaliar os monitores |
-| RF06 | Permitir ao Aluno/Monitor cadastrar horário e local de sua monitoria |
-| RF07 | Permitir ao Aluno/Monitor Registrar as atividades/ atendimentos realizados |
-| RF08 | Permitir ao professor crie, edite, faça login e apague sua conta |
-| RF09 | Permitir ao Professor e Coordenador possa cadastrar, atualizar e excluir disciplinas de um curso |
-| RF10 | Permitir ao Professor lançar um plano de monitoria para sua turma de uma disciplina |
-| RF11 | Permitir ao Professor selecionar os monitores classificados para sua disciplina|
-| RF12 | Permitir ao Professor gerenciar as atividades realizadas pelos monitores |
-| RF13 | Permitir ao Professor avaliar seus monitores |
-| RF14 | Permitir ao Coordenador gerenciar os cursos | 
-| RF15 | Permitir ao Coordenador aprovar e editar o plano de monitoria dos professores |
-| RF16 | Permitir ao Coordenador criar, editar e lançar edital com vagas de monitorias | 
-| RF17 | Permitir ao Coordenador homologar os candidatos a monitoria selecionados pelos professores |
-| RF18 | Permitir ao Coordenador acessar relatórios e gerenciar monitores classificados |
-| RF19 | Permitir que um professor possa ser classificado como coordenador de um curso |
-| RF20 | Exibir notificações e atualizações nas monitorias seguidas pelo aluno |
-| RF21 | Exibir Avisos gerais |
-| RF22 | Exibir todas as disciplinas com monitores cadastrados |
+| Identificador | Descrição | Prioridade | Complexidade |  
+| :------------ | :-------- | :--------: | :----------: |
+| RF01 | Permitir ao usuário consultar monitorias | alta | trivial |
+| RF02 | Permitir ao Aluno criar uma conta | alta | média |
+| RF03 | Permitir ao Aluno gerenciar sua conta( editar, inativar, apagar) | baixa | complexa |
+| RF04 | Permitir ao Aluno se candidatar a uma vaga de monitor em uma disciplina | alta | simples |
+| RF05 | Permitir ao Aluno participar/acompanhar monitorias ativas | media | baixa |
+| RF06 | Permitir ao Aluno consultar agenda de monitorias | média | trivial |
+| RF07 | Permitir ao Aluno agendar atendimento com um monitor | media | alta |
+| RF08 | Permitir ao Aluno avaliar os monitores | baixa | simples |
+| RF09 | Permitir ao Monitor cadastrar horário e local de sua monitoria | alta | média |
+| RF10 | Permitir ao Monitor Registrar as atividades/ atendimentos realizados |baixa | média |
+| RF11 | Permitir ao Professor criar uma conta | alta | média |
+| RF12 | Permitir ao Professor gerenciar sua conta( editar, inativar, disciplinas ministradas) | média | complexa|
+| RF13 | Permitir ao Professor e Coordenador possa gerenciar disciplinas (cadastrar, atualizar e excluir) de um curso |alta | complexa|
+| RF14 | Permitir ao Professor lançar um plano de monitoria para sua turma de uma disciplina | alta | média |
+| RF15 | Permitir ao Professor selecionar os monitores classificados para sua disciplina | alta | simples |
+| RF16 | Permitir ao Professor gerenciar as atividades realizadas pelos monitores | baixa | média |
+| RF17 | Permitir ao Professor avaliar seus monitores |baixa | simples |
+| RF18 | Permitir ao Coordenador gerenciar (adicionar, editar, inativar) disciplinas | média | complexa | 
+| RF19 | Permitir ao Coordenador aprovar e editar o plano de monitoria dos professores | média | média |
+| RF20 | Permitir ao Coordenador gereciar editais (criar, editar e lançar edital com vagas de monitorias) | média | complexa| 
+| RF21 | Permitir ao Coordenador homologar os candidatos a monitoria selecionados pelos professores | alta | simples|
+| RF22 | Permitir ao Coordenador/professor gerenciar monitores (relatórios de classificados, adicionar, retirar) | média | complexa |
+| RF23 | Exibir notificações e atualizações nas monitorias seguidas pelo aluno | alta | simples |
+| RF24 | Exibir Avisos gerais | baixa | trivial |
+| RF25 | Exibir todas as disciplinas com monitores cadastrados | baixa | trivial |
+
+RF04 Permitir ao usuário consultar local e horário de agendar atendimento com um monitor 
 
 #### 3.2.2 Requisitos não Funcionais
 
-| Identificador | Requisito |
-| :------------ | :-------- |
-| RNF01 | Garantir a segurança dos dados do usuário |
-| RNF02 | A Plataforma deve suportar os principais navegadores web |
-| RNF03 | A plataforma deve seguir as recomendações para acessibilidae na WEB do WCAG |
-| RNF04 | A plataforma deve seguir boas práticas de usabilidade |
-| RNF05 | O sistema deve controlar o acesso por meio de permiçõoes para cada perfil de usuário |
+| Identificador | Descrição Requisito | Prioridade| Tipo do Requisito |
+| :------------ | :------------------ | :-------: | :---------------: |
+| RNF01 | Garantir a segurança dos dados do usuário alinhada com LGPD - Lei Geral de Proteção de Dados do Brasil | alta | confiabilidade|
+| RNF02 | A Plataforma deve suportar os principais navegadores web | alta| usabilidade|
+| RNF03 | A plataforma deve seguir as recomendações para acessibilidae na WEB do WCAG | alta | usabilidade |
+| RNF04 | A plataforma deve seguir boas práticas de usabilidade | Alta | Usabilidade |
+| RNF05 | O sistema deve controlar o acesso por meio de permiçõoes para cada perfil de usuário | alta | Implementação |
 
 #### 3.3 Mínimo Produto Viável (MVP)
 * Registrar alunos e coordenadores
