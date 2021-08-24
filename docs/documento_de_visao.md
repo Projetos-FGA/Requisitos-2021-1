@@ -8,6 +8,7 @@
 | 05/08/2021 | 0.3 | Ajuste de formatação no documento | Carla Cangussú |
 | 05/08/2021 | 0.4 | Revisão do tópico gerenciamento de riscos e ajuste de formatação | Flávio Vieira |
 | 16/08/2021 | 0.5 | Atualizar lista de requisitos e adicionar o tipo, atributos e caracteríscas | Todos |
+| 23/08/2021 | 0.6 | Correção dos pontos indicados no feedback do monitor| Carla Cangussú |
 
 ## Sumário
     1. INTRODUÇÃO    
@@ -62,13 +63,15 @@
 | Posição do produto | Descrição |
 |:-------------------|:----------|
 | Para | alunos, monitores, professores e coordenadores de graduação da UnB|
-| Quem | deseja gerenciar as suas monitorias do semestre |
+| Quem | deseja acompanhar as suas monitorias do semestre |
 | O *UnB Monitorias* | é uma plataforma web|
-| Que | facilita o acesso às informações de todas as monitorias e do processo de candidatura à monitoria, pois podem ser acessadas a todo momento e em qualquer lugar por meio de um celular |
+| Que | facilita o acesso às informações de todas as monitorias e do processo de candidatura à monitoria |
 | Ao contrário | das informações dispersas sobre a monitoria e do seu processo de candidatura |
-| Nosso produto | unifica todo o processo de candidatura à monitoria, gerência e também acesso por parte dos alunos, professores e coordenadores. |
+| Nosso produto | unifica todo o processo de candidatura à monitoria, gerência(planejamento e controle das monitorias)  e também acesso por parte dos alunos, professores e coordenadores. |
 
 #### 3.2. Escopo do Produto
+O levantamento de requisitos foi realizado por meio do Brainstorming pela a equipe de desenvolvimento.
+
 #### 3.2.1 Requisitos Funcionais
 | Identificador | Descrição | Prioridade | Complexidade |  
 | :------------ | :-------- | :--------: | :----------: |
@@ -123,8 +126,10 @@ RF04 Permitir ao usuário consultar local e horário de agendar atendimento com 
 | Papel | Atribuições | Responsável | Participantes |
 |:------|:------------|:------------|:--------------|
 | Desenvolvedor | Executar o projeto com base no escopo | Mateus Brandão | Todos |
-| Mentor | Avaliar a qualidade do projeto | George Marsicano | George Marsicano |
-|Líder (por ciclo) |Direcionar e acompanhar o trabalho do ciclo | Todos | Todos | 
+| Mentor | Avaliar a qualidade do projeto | George Marsicano | Hugo Sobral |
+| Representante interno |Faz a comunicação dentro da matéria de requisitos, entre o grupo e o(s) mentor(es)| Carla Cangussú | Todos|
+| Representante externo |Faz a comunicação da equipe com a comunidade externa à matéria de requisitos | Flávio Vieira | Todos |
+|Líder (por ciclo) |Direcionar e acompanhar o trabalho do ciclo | Iago Oliveira | Todos | 
 
 ### **5. Ferramentas, Ambiente e Infra-Estrutura**
 #### 5.1. Hardware  
@@ -143,16 +148,24 @@ RF04 Permitir ao usuário consultar local e horário de agendar atendimento com 
 
 ### **6. Processo de Gerência de Projeto**  
 #### 6.1. Processo de Desenvolvimento e Mensuração  
-Para acompanhamento do progresso do projeto será utilizado o quadro kanban. A mensuração será feita pela quantidade de entregas feitas.
+Para acompanhamento do progresso de desenvolvimento do projeto será utilizado o quadro kanban. O quadro Kanban será composto pelo “backlog”, onde se encontram todas as funcionalidades a serem desenvolvidas, o “Para fazer“ com as funcionalidades escolhidas e não iniciadas da iteração vigente,  o “Em andamento” contendo as tarefas que estão em desenvolvimento e por fim o “concluído” com todas as atividades concluídas até o momento.  Para escolher as tarefas que farão parte do ciclo serão avaliados e monitorados a sua prioridade e dificuldade , por meio da matriz de impacto/esforço. Outro indicador importante para a mensuração do projeto será a relação entre a quantidade de entregas esperadas e as feitas. 
 
 #### 6.2. Planejamento das Fases e Iterações do Projeto
 | inicio | fim |  iteração e fase | entrega| 
 | :------| :-- | :----------------| :------|
-| 05/08/2021 | 18/08/2021 | 1 - Requisitos e design | Ajuste de escopo, levantamento de requisitos e definição do design ||
-| 19/08/2021 | 01/09/2021 | 2 - Construção  e teste| Registro de alunos e coordenadores  e Autenticação de usuários  |
-| 02/09/2021 | 15/09/2021 | 3 - Construção e teste | Cadastro disciplina e Lançar um edital de monitoria |
-| 16/09/2021 | 29/09/2021 | 4 - Construção e teste | Registro da candidatura do aluno à monitoria e Seleção dos monitores | 
-| 30/09/2021 | 07/10/2021 | 5 - Teste |Teste finais e últimos ajustes |
+| inicio | fim |  iteração e fase | entrega| 
+| 03/08/2021 | 05/08/2021 | 1 -  Requisitos e design | Entrega da unidade 1: visão do projeto |
+| 05/08/2021 | 18/08/2021 | 2 -  Requisitos e design | Ajuste de escopo, levantamento de requisitos e definição do design |
+| 19/08/2021 |  24/08/2021 | 3- Requisitos e design | Levantamento de requisitos, definição do backlog e correção da visão do projeto a partir do feedback do monitor |
+| 24/08/2021 | 26/08/2021| 4 -  Requisitos e design | Entrega da unidade 2 |
+| 27/08/2021 | 02/09/2021 | 5- Requisitos | PBB e Elaboração das história de usuários |
+| 02/09/2021 | 09/09/2021 | 6 - Requisitos | Mapeamento das histórias de usuários e BDD |
+| 10/09/2021 | 16/09/2021 | 7 - Requisitos | Entrega unidade 3 |  
+| 17/09/2021 | 21/09/2021 | 8 - Requisitos | Definição do backlog da sprint|
+| 21/09/2021 | 27/09/2021 | 9- Construção e teste | Registro de alunos e coordenadores  e Autenticação de usuários  |
+| 28/09/2021 | 01/10/2021 | 10 -  Construção e teste | Cadastro disciplina e Lançar um edital de monitoria |
+| 02/10/2021 | 07/10/2021 | 11- Construção e teste | Registro da candidatura do aluno à monitoria e Seleção dos monitores e Entrega da unidade 4| 
+
 
 #### 6.3. Matriz de Comunicação 
 | Descrição | Área/Envolvidos | Periodicidade | Produtos Gerados |
