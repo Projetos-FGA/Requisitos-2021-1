@@ -6,7 +6,7 @@
 | 22/08/2021 | 0.1    | Criação do documento | Flavio Vieira  |
 | 23/08/2021 | 0.2    | Tema estratégico     | Carla Cangussú |
 | 23/08/2021 | 0.3    | Histórias de usuário | Iago Sousa     |
-| 24/08/2021 | 0.4    | Épicos e Features  | Flavio Vieira / Iago  |
+| 24/08/2021 | 0.4    | Épicos e Features  | Flavio Vieira / Iago Oliveira |
 
 
 &nbsp;
