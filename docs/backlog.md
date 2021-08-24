@@ -9,7 +9,7 @@
 
 &nbsp;
 ## 1. Tema estratégico
-Os objetivos do UnB monitorias que irão direcionar as estratégias do projeto são: unificar todo o processo de candidatura à monitoria, gerenciar as monitorias e autenticar os usuários. O presente projeto tem como diferencial reunir todas as informações das monitorias para uma única plataforma, desde o lancamento do edital de monitoria pelo coordenador até o acompanhamento da monitoria selecionada pelo aluno. Isso torna o acesso às informações rápido e fácil. Além disso, atualmente não encontramos nada parecido, as informações se encontram espalhadas por diversas plataformas, como moodle, sigaa, teams e redes sociais variadas. O que faz esse projeto ser necessário.
+Os objetivos do UnB monitorias que irão direcionar as estratégias do projeto são: unificar todo o processo de candidatura à monitoria, gerenciar as monitorias e autenticar os usuários. O presente projeto tem como diferencial reunir todas as informações das monitorias em uma única plataforma, desde o lancamento do edital de monitoria pelo coordenador até o acompanhamento da monitoria selecionada pelo aluno. Isso torna o acesso às informações rápido e fácil. Além disso, atualmente não encontramos nada parecido, as informações se encontram espalhadas por diversas plataformas, como moodle, sigaa, teams e redes sociais variadas. O que faz esse projeto ser necessário e atrativo.
 
 ## 2. Épicos
 |ID|Descrição|
