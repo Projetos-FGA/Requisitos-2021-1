@@ -123,20 +123,20 @@ RF04 Permitir ao usuário consultar local e horário de agendar atendimento com 
 * Selecionar monitores
 * Autenticar usuários
 
-### 3.4# Backlog do Produto
+### 3.4 Backlog do Produto
 
 &nbsp;
-### 1. Tema estratégico
+### 3.4.1. Tema estratégico
 Os objetivos do UnB monitorias que irão direcionar as estratégias do projeto são: unificar todo o processo de candidatura à monitoria, gerenciar as monitorias e autenticar os usuários. O presente projeto tem como diferencial reunir todas as informações das monitorias em uma única plataforma, desde o lançamento do edital de monitoria pelo coordenador até o acompanhamento da monitoria selecionada pelo aluno. Isso torna o acesso às informações rápido e fácil. Além disso, atualmente não encontramos nada parecido, as informações se encontram espalhadas por diversas plataformas, como moodle, sigaa, teams e redes sociais variadas. O que faz esse projeto ser necessário e atrativo.
 
-#### 3.4.2. Épicos
+### 3.4.2. Épicos
 | ID   | Descrição |
 | :--- | :-------- |
 | EP1  | Gerenciamento de Usuários |
 | EP2  | Gerenciamento de Monitorias |
 | EP3  | Gerenciamento de Monitores |
 
-#### 3.4.3 Features
+### 3.4.3 Features
 #### **Épico 01 - Gerenciamento de Usuários**
 | ID   | Descrição |
 | :--- | :-------- |
@@ -157,7 +157,7 @@ Os objetivos do UnB monitorias que irão direcionar as estratégias do projeto s
 | F7   | Editais e Plano de Monitoria |
 | F8   | Disciplinas   |
  
-#### 3.4.4 Histórias de usuário
+### 3.4.4 Histórias de usuário
 | ID | Épico | Feature | Descrição |
 | :-- | :--- | :------ | :-------- |
 | US01 | EP1  | F1 | Eu como **aluno**, gostaria de **criar uma conta** para que eu possa **acessar todas as funcionalidades da plataforma** |
