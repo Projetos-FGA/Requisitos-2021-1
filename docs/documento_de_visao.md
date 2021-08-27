@@ -7,9 +7,10 @@
 | 04/08/2021 | 0.2 | Preenchimento do documento de visão |  Todos |
 | 05/08/2021 | 0.3 | Ajuste de formatação no documento | Carla Cangussú |
 | 05/08/2021 | 0.4 | Revisão do tópico gerenciamento de riscos e ajuste de formatação | Flávio Vieira |
-| 16/08/2021 | 0.5 | Atualizar lista de requisitos e adicionar o tipo, atributos e caracteríscas | Todos |
+| 16/08/2021 | 0.5 | Atualizar lista de requisitos e adicionar o tipo, atributos e características | Todos |
 | 23/08/2021 | 0.6 | Correção dos pontos indicados no feedback do monitor| Carla Cangussú |
 | 26/08/2021 | 0.7 | Inclusão do backlog do produto | Todos |
+| 27/08/2021 | 0.8 | Correção de erros ortográficos e ajuste no texto | Iago Oliveira |
 
 ## Sumário
     1. INTRODUÇÃO    
@@ -95,7 +96,7 @@ O levantamento de requisitos foi realizado por meio do Brainstorming pela a equi
 | RF17 | Permitir ao Professor avaliar seus monitores |baixa | simples |
 | RF18 | Permitir ao Coordenador gerenciar (adicionar, editar, inativar) disciplinas | média | complexa | 
 | RF19 | Permitir ao Coordenador aprovar e editar o plano de monitoria dos professores | média | média |
-| RF20 | Permitir ao Coordenador gereciar editais (criar, editar e lançar edital com vagas de monitorias) | média | complexa| 
+| RF20 | Permitir ao Coordenador gerenciar editais (criar, editar e lançar edital com vagas de monitorias) | média | complexa| 
 | RF21 | Permitir ao Coordenador homologar os candidatos a monitoria selecionados pelos professores | alta | simples|
 | RF22 | Permitir ao Coordenador/professor gerenciar monitores (relatórios de classificados, adicionar, retirar) | média | complexa |
 | RF23 | Exibir notificações e atualizações nas monitorias seguidas pelo aluno | alta | simples |
@@ -110,9 +111,9 @@ RF04 Permitir ao usuário consultar local e horário de agendar atendimento com 
 | :------------ | :------------------ | :-------: | :---------------: |
 | RNF01 | Garantir a segurança dos dados do usuário alinhada com LGPD - Lei Geral de Proteção de Dados do Brasil | alta | confiabilidade|
 | RNF02 | A Plataforma deve suportar os principais navegadores web | alta| usabilidade|
-| RNF03 | A plataforma deve seguir as recomendações para acessibilidae na WEB do WCAG | alta | usabilidade |
+| RNF03 | A plataforma deve seguir as recomendações para acessibilidade na WEB do WCAG | alta | usabilidade |
 | RNF04 | A plataforma deve seguir boas práticas de usabilidade | Alta | Usabilidade |
-| RNF05 | O sistema deve controlar o acesso por meio de permiçõoes para cada perfil de usuário | alta | Implementação |
+| RNF05 | O sistema deve controlar o acesso através de permissões para cada perfil de usuário | alta | Implementação |
 
 #### 3.3 Mínimo Produto Viável (MVP)
 * Registrar alunos e coordenadores
@@ -126,7 +127,7 @@ RF04 Permitir ao usuário consultar local e horário de agendar atendimento com 
 
 &nbsp;
 ## 1. Tema estratégico
-Os objetivos do UnB monitorias que irão direcionar as estratégias do projeto são: unificar todo o processo de candidatura à monitoria, gerenciar as monitorias e autenticar os usuários. O presente projeto tem como diferencial reunir todas as informações das monitorias em uma única plataforma, desde o lancamento do edital de monitoria pelo coordenador até o acompanhamento da monitoria selecionada pelo aluno. Isso torna o acesso às informações rápido e fácil. Além disso, atualmente não encontramos nada parecido, as informações se encontram espalhadas por diversas plataformas, como moodle, sigaa, teams e redes sociais variadas. O que faz esse projeto ser necessário e atrativo.
+Os objetivos do UnB monitorias que irão direcionar as estratégias do projeto são: unificar todo o processo de candidatura à monitoria, gerenciar as monitorias e autenticar os usuários. O presente projeto tem como diferencial reunir todas as informações das monitorias em uma única plataforma, desde o lançamento do edital de monitoria pelo coordenador até o acompanhamento da monitoria selecionada pelo aluno. Isso torna o acesso às informações rápido e fácil. Além disso, atualmente não encontramos nada parecido, as informações se encontram espalhadas por diversas plataformas, como moodle, sigaa, teams e redes sociais variadas. O que faz esse projeto ser necessário e atrativo.
 
 ## 3.4.2. Épicos
 | ID   | Descrição |
@@ -145,7 +146,7 @@ Os objetivos do UnB monitorias que irão direcionar as estratégias do projeto s
 ### **Épico 02 - Gerenciamento de Monitorias** 
 | ID   | Descrição |
 | :--- | :-------- |
-| F3   | Atendiento Monitoria |
+| F3   | Atendimento Monitoria |
 | F4   | Painel monitorias |
 | F5   | Consultas e Notificações |
 
@@ -179,10 +180,10 @@ Os objetivos do UnB monitorias que irão direcionar as estratégias do projeto s
 | US18 | EP3  | F6 | Eu como **coordenador**, gostaria de **homologar monitores** para que eu possa **confirmar os monitores selecionados pelos professores e selecionar monitores remunerados**|
 | US19 | EP3  | F7 | Eu como **professor**, gostaria de **lançar plano de monitoria de uma disciplina**  para que **alunos possa se candidatar a uma vaga**|
 | US20 | EP3  | F7 | Eu como **coordenador**, gostaria de **aprovar os planos de monitoria dos professores** para que eu possa **autorizar  e editar a quantidade de monitores solicitado pelo professor** |
-| US21 | EP3  | F7 | Eu como **coordenador**, gostaria de **criar edital de monitorias** para **notificar os interessados e dar transparência ao proocesso seletivo de monitores** |
+| US21 | EP3  | F7 | Eu como **coordenador**, gostaria de **criar edital de monitorias** para **notificar os interessados e dar transparência ao processo seletivo de monitores** |
 | US22 | EP3  | F7 | Eu como **coordenador**, gostaria de **editar edital de monitorias** para que possa **retificar ou atualizar um edital** |
 | US23 | EP3  | F8 | Eu como **coordenador**, gostaria de **adicionar nova disciplina** para que **professor possa registrar seu plano de monitoria**|
-| US24 | EP3  | F8 | Eu como **coordenador**, gostaria de **editar disciplinas** para que **corrigir informmações e/ou inativar disciplina** |
+| US24 | EP3  | F8 | Eu como **coordenador**, gostaria de **editar disciplinas** para que **corrigir informações e/ou inativar disciplina** |
 
 
 
