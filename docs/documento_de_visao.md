@@ -11,6 +11,9 @@
 | 23/08/2021 | 0.6 | Correção dos pontos indicados no feedback do monitor| Carla Cangussú |
 | 26/08/2021 | 0.7 | Inclusão do backlog do produto | Todos |
 | 27/08/2021 | 0.8 | Correção de erros ortográficos e ajuste no texto | Iago Oliveira |
+| 15/09/2021 | 0.9 | Elaboração do PBB| Carla, Henrique, Mateus e Iago Oliveira|
+| 16/09/2021 | 1.0 | Elaboração do BDD | Iago de Andrade |
+| 16/09/2021 | 1.1 | Acrescentar PBB e BDD no documento de visão e fazer os ajustes necessários | Carla Cangussú|
 
 ## Sumário
     1. INTRODUÇÃO    
@@ -20,7 +23,15 @@
     2. STAKEHOLDERS  
     3. VISÃO GERAL DO PRODUTO  
         3.1.	Declaração de Posição do Produto  
-        3.2.	Mínimo Produto Viável (MVP)
+        3.2.	Escopo do Projeto
+            3.2.1 Requisitos Funcionais
+            3.2.2 Requisitos Não Funcionais
+        3.3.    Mínimo Produto Viável (MVP)
+        3.4.     Backlog do Produto
+            3.4.1.    Tema estratégico
+            3.4.2.    Épicos
+            3.4.3.    Features
+            3.4.4.    Histórias de usuário
     4. VISÃO GERAL DO PROJETO  
         4.1.	Organização do Projeto  
     5. FERRAMENTAS, AMBIENTE E INFRA-ESTRUTURA  
@@ -304,6 +315,10 @@ Com base na avaliação elaborada é possível definir o risco e as prioridades 
 * Fazer um MVP
 * Estrutura básica da visão do produto
 * Análise e gerenciamento de riscos
+* Como montar um backlog por meio da metodologia SAFe
+* Construir histórias de usuários
+* Utilizar e Fazer um PBB e seus artefatos
+* Elaborar um BDD
 
 ### **8. Referências** 
 1. DEG-Monitoria <http://www.deg.unb.br/monitoria> acessado em: 03/08/2021 às 23:20
