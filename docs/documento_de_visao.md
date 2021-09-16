@@ -13,7 +13,7 @@
 | 27/08/2021 | 0.8 | Correção de erros ortográficos e ajuste no texto | Iago Oliveira |
 | 15/09/2021 | 0.9 | Elaboração do PBB| Carla, Henrique, Mateus e Iago Oliveira|
 | 16/09/2021 | 1.0 | Elaboração do BDD | Iago de Andrade |
-| 16/09/2021 | 1.1 | Acrescentar PBB e BDD no documento de visão e fazer os ajustes necessários | Carla Cangussú|
+| 16/09/2021 | 1.1 | Acrescentar PBB e BDD no documento de visão e fazer os ajustes necessários | Carla Cangussú e Iago Oliveira|
 
 ## Sumário
     1. INTRODUÇÃO    
@@ -46,6 +46,8 @@
     7. LIÇÕES APRENDIDAS
     8. REFERÊNCIAS
     9. CANVAS MVP
+    10. PRODUCT BACKLOG BUILDING
+    11. BEHAVIOR DRIVEN DEVELOPMENT
 
 ## Visão do Projeto
 ### **1. Introdução**  
@@ -334,4 +336,15 @@ Com base na avaliação elaborada é possível definir o risco e as prioridades 
 <p align="center">  <img src="../imgs/canvas_2.jpg" width="400"></p>
 <p align="center">  <img src="../imgs/canvas_3.jpg" width="400"></p>
 
+### **10. Product Backlog Building**
 
+<p align="center">  <img src="../imgs/pbb.jpg" width="800"></p>
+<p align="center">  <img src="../imgs/pbb1.jpg" width="800"></p>
+<p align="center">  <img src="../imgs/pbb2.jpg" width="800"></p>
+<p align="center">  <img src="../imgs/pbb4.jpg" width="800"></p>
+<p align="center">  <img src="../imgs/pbb5.jpg" width="800"></p>
+
+### **11. Behavior Driven Development**
+
+<p align="center">  <img src="../imgs/bdd.jpg" width="800"></p>
+<p align="center">  <img src="../imgs/bdd1.jpg" width="800"></p>
