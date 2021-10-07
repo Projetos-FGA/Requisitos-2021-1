@@ -16,6 +16,7 @@
 | 16/09/2021 | 1.1    | Acrescentar PBB e BDD no documento de visão e fazer os ajustes necessários    | Carla Cangussú e Iago Oliveira                  |
 | 03/10/2021 | 1.2    | Atualização dos requisitos e manutenção da rastreabilidade do projeto         | Carla Cangussú, Iago Oliveira e Iago de Andrade |
 | 05/10/2021 | 1.3    | Atualização das histórias de usuário                                          | Carla Cangussú, Iago Oliveira e Iago de Andrade |
+| 07/10/2021 | 1.4    | Inclusão do tópico de estratégia de requisitos                                | Carla Cangussú, Iago Oliveira e Iago de Andrade |
 
 ## Sumário
     1. INTRODUÇÃO    
@@ -45,7 +46,8 @@
         6.2.	Processo de Desenvolvimento e Mensuração  
         6.3.	Matriz de Comunicação  
         6.4.	Escalabilidade do Projeto  
-        6.5.	Gerenciamento de Riscos  
+        6.5.  Estratégia de requisitos
+        6.6.	Gerenciamento de Riscos  
     7. LIÇÕES APRENDIDAS
     8. REFERÊNCIAS
     9. CANVAS MVP
@@ -291,9 +293,31 @@ Para acompanhamento do progresso de desenvolvimento do projeto será utilizado o
 | C05      | Desistência de Membros                                   | Líder do ciclo vigente | Realocar tarefas entre os membros da equipe                                                                          |
 | C06      | Limitação com as tecnologias                             | Todos                  | Realizar treinamentos e pareamentos com membros mais experientes                                                     |
 
-#### 6.5. Gerenciamento de Riscos
+#### 6.5 Estratégia de requisitos
 
-##### 6.5.1 Análise quantitativa dos riscos e Impacto  
+##### 6.5.1 - Elicitação de requisitos
+Nessa etapa, utilizamos a técnica de Brainstorming para elicitar os requisitos e também entrevistamos alunos, monitores e professores que se encaixam nas personas trabalhadas no projeto UnB monitorias.	
+
+##### 6.5.2 - Verificação e validação dos requisitos
+Nessa etapa, utilizamos a técnica de walkthrough, que consiste em avaliações informais pelos próprios desenvolvedores com o objetivo de obter aprovação sobre a escrita dos requisitos. Além disso, também foram feitas revisões informais entre os desenvolvedores, as quais focam em validar os requisitos e, caso necessário, realizar alterações.
+	
+##### 6.5.3 - Documentação
+- Visão do Projeto (GitHub) - documento com todas as informações do projeto, contendo, por exemplo, o escopo do projeto, planejamento, artefatos desenvolvidos, técnicas e práticas utilizadas. 
+- Canvas MVP (Miro) - quadro canvas MVP com as características do primeiro MVP (Minimum Viable Product – ou Produto Mínimo Viável).
+- Backlog SAFe (GitHub) - documentação de todos os épicos, features e histórias de usuário do primeiro MVP. Esses produtos compõem o backlog SAFe.
+- Canvas PBB (Miro) - Fizemos um PBB para cada persona do primeiro MVP. (<https://miro.com/app/board/o9J_lxnn4Xk=/>).
+- BDD (Planilhas google) - a partir do canvas PBB elaboramos o BDD  que é o levantamento de histórias e seus critérios de aceitação. (<https://docs.google.com/spreadsheets/d/1p5PFOIWalxLjYE1ZU4GKgToYUsrGc0QLDhuB_LaQ1WM/edit#gid=0>).
+- User story map (Miro) - um backlog do produto, contendo as jornadas de cada usuário. As jornadas são formadas pelas steps e histórias de usuários.(<https://miro.com/app/board/o9J_lrmSLiw=/>)
+
+##### 6.5.4 - Gerenciamento de requisitos
+O Gerenciamento de requisitos foi feito mantendo o rastros desses nos tópicos posteriores e artefatos feitos. E também por meio do quadro kanban no trello (<https://trello.com/b/rJvJT5tx/rand42>).
+
+O Gerenciamento de mudanças por meio do quadro de versionamento no documento de visão e pelo GitHub para a implementação.
+
+
+#### 6.6. Gerenciamento de Riscos
+
+##### 6.6.1 Análise quantitativa dos riscos e Impacto  
 
 | Peso | Impacto     | Probabilidade |
 | :--- | :---------- | :------------ |
@@ -320,7 +344,7 @@ Com base na avaliação elaborada é possível definir o risco e as prioridades 
 | Alto     |  14 - 19  | Riscos altos se não tratados podem se tornar críticos | Ter um plano de contingência para reduzir o impacto                  |  |
 | Crítico  |  20 - 25  | Riscos quem podem inviabilizar o projeto              | Ações de mitigação devem ter prioridade para reduzir a probabilidade |
 
-##### 6.5.1 Levantamento de riscos  
+##### 6.6.1 Levantamento de riscos  
 
 | Id   | Descrição                                                | Probabilidade | Impacto    | Avaliação | Mitigação / Contingência                                                                                                                                                                    |
 | :--- | :------------------------------------------------------- | :------------ | :--------- | :-------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -332,7 +356,7 @@ Com base na avaliação elaborada é possível definir o risco e as prioridades 
 | R06  | Limitação dos desenvolvedores com as tecnologias         | Alta          | Alta       | 16        | Realizar treinamentos e pareamentos com membros mais experientes                                                                                                                            |
 | R07  | Mudança na arquitetura do Projeto                        | Média         | Muito alta | 15        | Análise detalhada as tecnologias definidas de modo a garantir a viabilidade do Projeto / Definir no arquitetura, replanejamento do cronograma e necessidade treinamentos na nova tecnologia |
 
-#### 6.6. Critérios de Replanejamento  
+#### 6.7. Critérios de Replanejamento  
 * Prazo: o tempo que temos para realocar a entrega
 * Equipe: Quantas pessoas tem disponibilidade para poder distribuir as atividades que faltam ser feitas ou devem ser refeitas
 * Competência: qual é a pessoa mais indica para a determinada tarefa
