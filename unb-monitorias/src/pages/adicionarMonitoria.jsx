@@ -1,7 +1,7 @@
 import styles from '../styles/AdicionarMonitoria.module.css'
 import Layout from '../components/Layout.jsx'
 import React, { useEffect, useState } from "react";
-
+import { supabase } from '../utils/supabaseClient';
 
 export default function AdicionarMonitoria(){
 
@@ -11,8 +11,18 @@ export default function AdicionarMonitoria(){
     const [descricao, setDescricao] = useState('')
     const [vagas, setVagas] = useState('')
 
-    function criarMonitoria(){
+    async function criarMonitoria(){
         console.log(codigo, nome, professor, descricao, vagas)
+        try {
+            const result = await supabase
+            .from('monitoria')
+            .insert([
+                { codigo: codigo, nome: nome, professor: professor, descricao: descricao, vagas: vagas },
+            ])
+            console.log(result)
+        } catch (error) {
+            console.log(error)
+        }
     }
     return (
         <Layout>

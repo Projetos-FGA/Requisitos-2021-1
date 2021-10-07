@@ -3,11 +3,13 @@ import styles from '../styles/Login.module.css'
 import Link from 'next/link'
 import React, { useEffect, useState } from "react";
 import { supabase } from '../utils/supabaseClient';
+import { useRouter } from 'next/router'
 
 
 export default function Login(){
     const [email, setEmail] = useState('')
     const [senha, setSenha] = useState('')
+    const router = useRouter()
 
     async function fazerLogin() {
         console.log(email, senha)
@@ -15,7 +17,14 @@ export default function Login(){
             email: email,
             password: senha
           })
-          console.log(result)
+          if(result.user){
+              console.log('qui')
+            router.push("/monitorias").then(
+                setTimeout(()=>{
+                    window.location.reload()
+                },500)
+            )
+          }
     }
 
     return (

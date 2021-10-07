@@ -4,7 +4,7 @@ export default function Conta(){
     return (
             <Layout>
                 <div>
-                    <h1>Conta</h1>
+                    conta
                 </div>
             </Layout>
     )
