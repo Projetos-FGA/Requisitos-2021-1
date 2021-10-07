@@ -17,6 +17,7 @@
 | 03/10/2021 | 1.2    | Atualização dos requisitos e manutenção da rastreabilidade do projeto         | Carla Cangussú, Iago Oliveira e Iago de Andrade |
 | 05/10/2021 | 1.3    | Atualização das histórias de usuário                                          | Carla Cangussú, Iago Oliveira e Iago de Andrade |
 | 07/10/2021 | 1.4    | Inclusão do tópico de estratégia de requisitos                                | Carla Cangussú, Iago Oliveira e Iago de Andrade |
+| 07/10/2021 | 1.5    | Elaboração do User story map                                                  | Carla Cangussú, Iago Oliveira e Iago de Andrade |
 
 ## Sumário
     1. INTRODUÇÃO    
@@ -53,6 +54,7 @@
     9. CANVAS MVP
     10. PRODUCT BACKLOG BUILDING
     11. BEHAVIOR DRIVEN DEVELOPMENT
+    12. USER STORY MAP
 
 ## Visão do Projeto
 ### **1. Introdução**  
@@ -388,13 +390,15 @@ Com base na avaliação elaborada é possível definir o risco e as prioridades 
 
 ### **10. Product Backlog Building**
 
-<p align="center">  <img src="../imgs/pbb.jpg" width="800"></p>
-<p align="center">  <img src="../imgs/pbb1.jpg" width="800"></p>
-<p align="center">  <img src="../imgs/pbb2.jpg" width="800"></p>
-<p align="center">  <img src="../imgs/pbb4.jpg" width="800"></p>
-<p align="center">  <img src="../imgs/pbb5.jpg" width="800"></p>
+O PBB foi atualizado e pode ser acessado por meio do link: (<https://miro.com/app/board/o9J_lxnn4Xk=/>).
 
 ### **11. Behavior Driven Development**
 
-<p align="center">  <img src="../imgs/bdd.jpg" width="800"></p>
-<p align="center">  <img src="../imgs/bdd1.jpg" width="800"></p>
+O BDD foi atualizado e  pode ser acessado por meio do link:
+https://docs.google.com/spreadsheets/d/1p5PFOIWalxLjYE1ZU4GKgToYUsrGc0QLDhuB_LaQ1WM/edit#gid=0
+
+### **12. User story map**
+
+O user story map pode ser acessado por meio do link: https://miro.com/app/board/o9J_lrmSLiw=/
+
+
