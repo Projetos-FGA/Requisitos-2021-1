@@ -32,7 +32,7 @@ export default function Monitorias(){
                     <div className={styles.cards}>
                         {
                             monitorias.map((monitoria, index) => {
-                                return <Monitoria key={index} nome={monitoria.nome} codigo={monitoria.codigo}></Monitoria>
+                                return <Monitoria key={index} monitoria={monitoria}></Monitoria>
                             })
                         }
                     </div>
