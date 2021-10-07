@@ -15,6 +15,7 @@
 | 16/09/2021 | 1.0    | Elaboração do BDD                                                             | Iago de Andrade                                 |
 | 16/09/2021 | 1.1    | Acrescentar PBB e BDD no documento de visão e fazer os ajustes necessários    | Carla Cangussú e Iago Oliveira                  |
 | 03/10/2021 | 1.2    | Atualização dos requisitos e manutenção da rastreabilidade do projeto         | Carla Cangussú, Iago Oliveira e Iago de Andrade |
+| 05/10/2021 | 1.3    | Atualização das histórias de usuário                                          | Carla Cangussú, Iago Oliveira e Iago de Andrade |
 
 ## Sumário
     1. INTRODUÇÃO    
@@ -172,10 +173,10 @@ Os objetivos do UnB monitorias que irão direcionar as estratégias do projeto s
 
 ### 3.4.3 Features
 #### **Épico 01 - Gerenciamento de Usuários**
-| ID   | Descrição                        |
-| :--- | :------------------------------- |
-| F1   | Cadastro de Professores e alunos |
-| F2   | Perfil                           |
+| ID   | Descrição            |
+| :--- | :------------------- |
+| F1   | Cadastro de usuários |
+| F2   | Perfil               |
 
 #### **Épico 02 - Gerenciamento de Monitorias** 
 | ID   | Descrição                |
@@ -195,29 +196,36 @@ Os objetivos do UnB monitorias que irão direcionar as estratégias do projeto s
 | Épico | Feature | ID   | Descrição                                                                                                                                                                              |
 | :---- | :------ | :--- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | EP1   | F1      | US01 | Eu, como **aluno**, gostaria de **criar uma conta** para que eu possa **acessar todas as funcionalidades da plataforma**                                                               |
-| EP1   | F1      | US02 | Eu, como **professor**, gostaria de **criar uma conta** para que eu possa **acessar todas as funcionalidades da plataforma**                                                           |
-| EP1   | F2      | US03 | Eu, como **aluno**, gostaria de **editar meu perfil** para que eu possa **corrigir uma informação errada ou atualizar meu perfil**                                                     |
-| EP1   | F2      | US04 | Como **aluno**, gostaria de **excluir minha conta** para que eu possa **apagar meu registro da plataforma**                                                                            |
-| EP1   | F2      | US05 | Eu, como **professor**, gostaria de **editar os dados da minha conta** para que eu possa **manter meu atualizado**                                                                     |
-| EP2   | F3      | US06 | Eu, como **aluno**, gostaria de **consultar agenda de monitorias** para que eu possa **participar das monitorias**                                                                     |
-| EP2   | F3      | US07 | Eu, como **aluno**, gostaria de **solicitar atendimento com um monitor** para que eu possa **ter um atendimento exclusivo com um monitor**                                             |
-| EP2   | F4      | US08 | Eu, como **monitor**, gostaria de **cadastrar horário e local da minha monitoria** para que eu possa **que os alunos sejam informados**                                                |
-| EP2   | F4      | US09 | Eu, como **monitor**, gostaria de **registrar as monitorias realizadas** para que eu possa **ter maior controle e organização sobre minhas atividades**                                |
-| EP2   | F4      | US10 | Eu, como **aluno**, gostaria de **avaliar monitores** para que eu possa **dar meu feedback e ajudar outros alunos e professor sobre atuação do monitor**                               |
-| EP1   | F4      | US11 | Eu, como **professor**, gostaria de **ter acesso às informações dos monitores das minhas turmas** para que eu possa **gerenciar suas atividades**                                      |
-| EP3   | F4      | US12 | Eu, como **professor**, gostaria de **avaliar monitores** para que eu possa **no final do semestre, aprovar monitores com base nas atividades registradas e feedback dos alunos**      |
-| EP2   | F5      | US13 | Eu, como **aluno**, gostaria de **ser notificado quando um novo plano de monitoria/edital for lançado** para que eu possa **me manter informado sobre vagas em monitorias**            |
-| EP2   | F5      | US14 | Eu, como **aluno**, gostaria de **seguir monitorias** para que eu possa **receber informações e notificações das atividades na monitoria**                                             |
-| EP2   | F5      | US15 | Eu, como **aluno**, gostaria de **editar configurações de notificação** para que eu possa **escolher quais os tipos de notificações desejo receber**                                   |
-| EP3   | F6      | US16 | Eu, como **aluno**, gostaria de **candidatar a uma vaga de monitor** para que eu possa **participar do processo de seleção de monitores**                                              |
-| EP3   | F6      | US17 | Eu, como **professor**, gostaria de **selecionar monitores** para que eu possa **escolher entre os alunos registrados**                                                                |
-| EP3   | F6      | US18 | Eu, como **coordenador**, gostaria de **homologar monitores** para que eu possa **confirmar os monitores selecionados pelos professores e selecionar monitores remunerados**           |
-| EP3   | F7      | US19 | Eu, como **professor**, gostaria de **lançar plano de monitoria de uma disciplina**  para que **alunos possa se candidatar a uma vaga**                                                |
-| EP3   | F7      | US20 | Eu, como **coordenador**, gostaria de **aprovar os planos de monitoria dos professores** para que eu possa **autorizar  e editar a quantidade de monitores solicitado pelo professor** |
-| EP3   | F7      | US21 | Eu, como **coordenador**, gostaria de **criar edital de monitorias** para **notificar os interessados e dar transparência ao processo seletivo de monitores**                          |
-| EP3   | F7      | US22 | Eu, como **coordenador**, gostaria de **editar edital de monitorias** para que possa **retificar ou atualizar um edital**                                                              |
-| EP3   | F8      | US23 | Eu, como **coordenador**, gostaria de **adicionar nova disciplina** para que **professor possa registrar seu plano de monitoria**                                                      |
-| EP3   | F8      | US24 | Eu, como **coordenador**, gostaria de **editar disciplinas** para que **corrigir informações e/ou inativar disciplina**                                                                |
+| EP1   | F1      | US02 | Eu, como **coordenador**, gostaria de **criar uma conta** para que eu possa **acessar todas as funcionalidades da plataforma**                                                         |
+| EP1   | F1      | US03 | Eu, como **professor**, gostaria de **criar uma conta** para que eu possa **acessar todas as funcionalidades da plataforma**                                                           |
+| EP1   | F2      | US04 | Eu, como **aluno**, gostaria de **editar meu perfil** para que eu possa **corrigir uma informação errada ou atualizar meu perfil**                                                     |
+| EP1   | F2      | US05 | Como **aluno**, gostaria de **excluir minha conta** para que eu possa **apagar meu registro da plataforma**                                                                            |
+| EP1   | F2      | US06 | Eu, como **coordenador**, gostaria de **editar meu perfil** para que eu possa **corrigir uma informação errada ou atualizar meu perfil**                                               |
+| EP1   | F2      | US07 | Como **coordenador**, gostaria de **excluir minha conta** para que eu possa **apagar meu registro da plataforma**                                                                      |
+| EP1   | F2      | US08 | Eu, como **professor**, gostaria de **editar os dados da minha conta** para que eu possa **manter meu atualizado**                                                                     |
+| EP1   | F2      | US09 | Eu, como **professor**, gostaria de **excluir minha conta** para que eu possa **apagar meu registro da plataforma**                                                                    |
+| EP2   | F3      | US10 | Eu, como **monitor**, gostaria de **disponibilizar os horários de atendimento** para que **os alunos entrem em contato nessa faixa de horário**                                        |
+| EP2   | F3      | US11 | Eu, como **monitor**, gostaria de **disponibilizar meu contato** para que **os alunos me contatem**                                                                                    |
+| EP2   | F3      | US12 | Eu, como **aluno**, gostaria de **consultar agenda de monitorias** para que eu possa **participar das monitorias**                                                                     |
+| EP2   | F3      | US13 | Eu, como **aluno**, gostaria de **solicitar atendimento com um monitor** para que eu possa **ter um atendimento exclusivo com um monitor**                                             |
+| EP2   | F4      | US14 | Eu, como **monitor**, gostaria de **cadastrar horário e local da minha monitoria** para que eu possa **que os alunos sejam informados**                                                |
+| EP2   | F4      | US15 | Eu, como **monitor**, gostaria de **registrar as monitorias realizadas** para que eu possa **ter maior controle e organização sobre minhas atividades**                                |
+| EP2   | F4      | US16 | Eu, como **aluno**, gostaria de **avaliar monitores** para que eu possa **dar meu feedback e ajudar outros alunos e professor sobre atuação do monitor**                               |
+| EP2   | F4      | US17 | Eu, como **professor**, gostaria de **ter acesso às informações dos monitores das minhas turmas** para que eu possa **gerenciar suas atividades**                                      |
+| EP2   | F4      | US18 | Eu, como **professor**, gostaria de **avaliar monitores** para que eu possa **no final do semestre, aprovar monitores com base nas atividades registradas e feedback dos alunos**      |
+| EP2   | F5      | US19 | Eu, como **aluno**, gostaria de **ser notificado quando um novo plano de monitoria/edital for lançado** para que eu possa **me manter informado sobre vagas em monitorias**            |
+| EP2   | F5      | US20 | Eu, como **aluno**, gostaria de **seguir monitorias** para que eu possa **receber informações e notificações das atividades na monitoria**                                             |
+| EP2   | F5      | US21 | Eu, como **aluno**, gostaria de **editar configurações de notificação** para que eu possa **escolher quais os tipos de notificações desejo receber**                                   |
+| EP3   | F6      | US22 | Eu, como **aluno**, gostaria de **candidatar a uma vaga de monitor** para que eu possa **participar do processo de seleção de monitores**                                              |
+| EP3   | F6      | US23 | Eu, como **coordenador**, gostaria de **alterar as permissões dos perfis de alunos e monitores**, para **transformar aluno em monitores e monitores em alunos**                        |
+| EP3   | F6      | US24 | Eu, como **professor**, gostaria de **selecionar monitores** para que eu possa **escolher entre os alunos registrados**                                                                |
+| EP3   | F6      | US25 | Eu, como **coordenador**, gostaria de **homologar monitores** para que eu possa **confirmar os monitores selecionados pelos professores e selecionar monitores remunerados**           |
+| EP3   | F7      | US26 | Eu, como **professor**, gostaria de **lançar plano de monitoria de uma disciplina**  para que **alunos possa se candidatar a uma vaga**                                                |
+| EP3   | F7      | US27 | Eu, como **coordenador**, gostaria de **aprovar os planos de monitoria dos professores** para que eu possa **autorizar  e editar a quantidade de monitores solicitado pelo professor** |
+| EP3   | F7      | US28 | Eu, como **coordenador**, gostaria de **criar edital de monitorias** para **notificar os interessados e dar transparência ao processo seletivo de monitores**                          |
+| EP3   | F7      | US29 | Eu, como **coordenador**, gostaria de **editar edital de monitorias** para que possa **retificar ou atualizar um edital**                                                              |
+| EP3   | F8      | US30 | Eu, como **coordenador**, gostaria de **adicionar nova disciplina** para que **professor possa registrar seu plano de monitoria**                                                      |
+| EP3   | F8      | US31 | Eu, como **coordenador**, gostaria de **editar disciplinas** para que **corrigir informações e/ou inativar disciplina**                                                                |
 
 
 ### **4. Visão Geral do Projeto**  
