@@ -2,13 +2,20 @@ import Layout from '../components/Layout'
 import styles from '../styles/Login.module.css'
 import Link from 'next/link'
 import React, { useEffect, useState } from "react";
+import { supabase } from '../utils/supabaseClient';
+
 
 export default function Login(){
     const [email, setEmail] = useState('')
     const [senha, setSenha] = useState('')
 
-    function fazerLogin() {
+    async function fazerLogin() {
         console.log(email, senha)
+        const result = await supabase.auth.signIn({
+            email: email,
+            password: senha
+          })
+          console.log(result)
     }
 
     return (
@@ -27,12 +34,12 @@ export default function Login(){
                             <input type="password" placeholder="Senha" className={styles.field} onChange={event => setSenha(event.target.value)}/>
                         </div>
                         <button className={styles.btnEntrar} onClick={fazerLogin}>Entrar</button>
-                        <div className={styles.divider}>
+                        {/* <div className={styles.divider}>
                             <span className={styles.dividerLine}></span>
                             <span> ou </span>
                             <span className={styles.dividerLine}></span>
                         </div>
-                        <button className={styles.btnGoogle}>Login com Google+</button>
+                        <button className={styles.btnGoogle}>Login com Google+</button> */}
                     </div>
                 </div>
             </Layout>
