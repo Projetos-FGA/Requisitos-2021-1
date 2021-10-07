@@ -5,7 +5,7 @@ import styles from '../styles/Modal.module.css'
 
 
 
-export default function Modal({show, onClose, children}) {
+export default function Modal({show, onClose, children, titulo}) {
     const [isBrowser, setIsBrowser] = useState(false);
 
     useEffect(() => {
@@ -21,6 +21,8 @@ export default function Modal({show, onClose, children}) {
         <div className={styles.overlay}>
             <div className={styles.modal}>
                 <div className={styles.header}>
+                    <span className={styles.titulo}>{titulo}</span>
+                    <span className={styles.spacer}></span>
                     <a href="#" onClick={handleClose}>
                         X
                     </a>
