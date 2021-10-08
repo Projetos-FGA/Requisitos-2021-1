@@ -12,19 +12,17 @@ export default function Login(){
     const router = useRouter()
 
     async function fazerLogin() {
-        console.log(email, senha)
-        const result = await supabase.auth.signIn({
-            email: email,
-            password: senha
-          })
-          if(result.user){
-              console.log('qui')
-            router.push("/monitorias").then(
-                setTimeout(()=>{
-                    window.location.reload()
-                },500)
+        try {
+            const response = await supabase.auth.signIn({
+                email: email,
+                password: senha
+            })
+            if(response.user) router.push("/monitorias").then(
+                setTimeout(()=>window.location.reload(),500)
             )
-          }
+        } catch (error) {
+            console.log(error)
+        }
     }
 
     return (

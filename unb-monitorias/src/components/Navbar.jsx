@@ -8,44 +8,40 @@ import { useRouter } from 'next/router'
 
 export default function Navbar(){
     const router = useRouter()
-    const { user } = useContext(AuthContext) 
+    const { user } = useContext(AuthContext)
+
     async function logout() {
         try {
-            await supabase.auth.signOut();
-            router.push("/home").then(
-                setTimeout(()=>{
-                    window.location.reload()
-                },500)
+            await supabase.auth.signOut()
+            router.replace("/home").then(
+                setTimeout(()=>window.location.reload(),500)
             )
         } catch (error) {
             console.log(error)
         }
     }
+
     return (
         <nav className={styles.navbar}>
             <div className={styles.menuItem}>
                 <Link href="/home">Home</Link>
             </div>
-            <div className={styles.menuItem}>
-                { user ? <Link href="/monitorias">Monitorias</Link> : null}
-            </div>
-            {/* <div className={styles.menuItem}>
-                <Link href="/professor">Professor</Link>
-            </div>
-            <div className={styles.menuItem}>
-                <Link href="/aluno">Aluno</Link>
-            </div>
-            <div className={styles.menuItem}>
-                <Link href="/sobre">Sobre</Link>
-            </div> */}
-            <span className={styles.spacer}></span>
-            <div className={styles.menuItem}>
-                { user ? <div className={styles.flex}>
-                            <span>Olá, {user.email}!</span>
-                            <button className={styles.btnLogout} onClick={logout}>Logout</button>
-                        </div>
-                        : <Link href="/login">Entrar/Cadastrar</Link> }
-            </div>
+            {
+                user ?
+                <>
+                    <Link href="/monitorias">Monitorias</Link>
+                    <span className={styles.spacer}></span>
+                    <div className={styles.flex}>
+                        <span>Olá, {user.email}!</span>
+                        <button className={styles.btnLogout} onClick={logout}>Logout</button>
+                    </div>
+                </>
+                :
+                <>
+                    <span className={styles.spacer}></span>
+                    <Link href="/login">Entrar/Cadastrar</Link>
+                </>
+            }
         </nav>
     )
 }

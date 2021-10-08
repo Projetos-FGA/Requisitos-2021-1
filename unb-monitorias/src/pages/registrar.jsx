@@ -3,9 +3,11 @@ import styles from '../styles/Registrar.module.css'
 import Link from 'next/link'
 import React, { useEffect, useState } from "react";
 import { supabase } from '../utils/supabaseClient';
+import { useRouter } from 'next/router'
 
 
 export default function Registrar(){
+    const router = useRouter()
     const [email, setEmail] = useState('')
     const [senha, setSenha] = useState('')
     const [nome, setNome] = useState('')
@@ -24,11 +26,9 @@ export default function Registrar(){
           { isAluno: tipo, nome: nome, idAuth: result.user.id, matricula: matricula },
         ])
         if(res){
-            const credentials = {
-                user: result.user,
-                usuario: res.data[0]
-            }
-            console.log(credentials)
+            router.push("/monitorias").then(
+                setTimeout(()=>window.location.reload(),500)
+            )
         }
       }
     }

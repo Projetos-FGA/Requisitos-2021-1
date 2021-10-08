@@ -17,31 +17,36 @@ import { AuthContext } from "../contexts/AuthContext";
 
 export default function Monitorias(){
     const[ monitorias, setMonitorias] = useState([])
+    const[ isAluno, setIsAluno] = useState(true)
+    // const[ usuario, setUsuario] = useState({})
     const { user } = useContext(AuthContext)
-    const isProfessor = true
+    const { usuario } = useContext(AuthContext)
+
 
     useEffect(() => {
         supabase
             .from('monitoria')
             .select('*')
             .then(response => setMonitorias(response.body))
-
-    }, [])
+    }, [user])
 
 
     return (
             <Layout>
                 <div className={styles.main} id="modal-root">
-                    {isProfessor ?
-                        <div className={styles.header}>
-                            <span className={styles.spacer}></span>
-                            <Link href="/adicionarMonitoria"><button className={styles.btnAdicionar}>Adicionar Monitoria</button></Link>
-                        </div>
-                        : null }
+                    { usuario ? (
+                        !usuario.isAluno ?
+                            <div className={styles.header}>
+                                <span className={styles.spacer}></span>
+                                <Link href="/adicionarMonitoria"><button className={styles.btnAdicionar}>Adicionar Monitoria</button></Link>
+                            </div>
+                            : null
+                        ) : null
+                     }
                     <div className={styles.cards}>
                         {
                             monitorias.map((monitoria, index) => {
-                                return <Monitoria key={index} monitoria={monitoria} isProfessor={isProfessor}></Monitoria>
+                                return <Monitoria key={index} monitoria={monitoria} isProfessor={ usuario ? !usuario.isAluno : false}></Monitoria>
                             })
                         }
                     </div>
