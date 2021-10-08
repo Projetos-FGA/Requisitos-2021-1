@@ -2,34 +2,40 @@ import Layout from '../components/Layout'
 import styles from '../styles/Monitorias.module.css'
 import Monitoria from '../components/Monitoria'
 import Link from 'next/link'
+import { supabase } from '../utils/supabaseClient';
+import React, { useEffect, useState } from "react";
+import { useContext } from 'react'
+import { AuthContext } from "../contexts/AuthContext";
+
+// async function getTipoUsuario() {
+//     if(user){
+//         const usuario = await supabase.from('usuario').select('*').eq('idAuth', user.id)
+//         console.log(usuario)
+//         return true
+//     } else return false
+// }
 
 export default function Monitorias(){
-    const isProfessor = false
-    const monitorias = [
-        {
-            nome: 'Requisitos',
-            codigo: 'FGA1234',
-        },
-        {
-            nome: 'Métodos de desenvolvimento de Software',
-            codigo: 'FGA4231',
-        },
-        {
-            nome: 'Requisitos de Software',
-            codigo: 'FGA0001',
-        },
-        {
-            nome: 'Bancos de dados 2',
-            codigo: 'FGA6623',
-        }
-    ]
+    const[ monitorias, setMonitorias] = useState([])
+    const { user } = useContext(AuthContext)
+    const isProfessor = true
+
+    useEffect(() => {
+        supabase
+            .from('monitoria')
+            .select('*')
+            .then(response => setMonitorias(response.body))
+
+    }, [])
+
+
     return (
             <Layout>
                 <div className={styles.main} id="modal-root">
                     {isProfessor ?
                         <div className={styles.header}>
                             <span className={styles.spacer}></span>
-                            <Link href="/adicionarMonitoria"><button className={styles.btnAdicionar}>Adicionar Monitoria</button></Link>
+                            <Link href="/AdicionarMonitoria"><button className={styles.btnAdicionar}>Adicionar Monitoria</button></Link>
                         </div>
                         : null }
                     <div className={styles.cards}>

@@ -10,19 +10,26 @@ export default function Registrar(){
     const [senha, setSenha] = useState('')
     const [nome, setNome] = useState('')
     const [tipo, setTipo] = useState(true)
+    const [matricula, setMatricula] = useState('')
 
     async function fazerRegistro() {
-       console.log(email, nome,  senha, tipo)
        const result = await supabase.auth.signUp({
         email: email,
         password: senha
       })
-      if(result) {
+      if(result.user) {
         const res = await supabase
         .from('usuario')
         .insert([
-          { isAluno: tipo, nome: nome, idAuth: result.user.id, matricula: "teste" },
+          { isAluno: tipo, nome: nome, idAuth: result.user.id, matricula: matricula },
         ])
+        if(res){
+            const credentials = {
+                user: result.user,
+                usuario: res.data[0]
+            }
+            console.log(credentials)
+        }
       }
     }
     return (
@@ -32,7 +39,7 @@ export default function Registrar(){
                         <h1 className={styles.title}>Cadastre-se aqui!</h1>
                         <span className={styles.subTitle}>
                             Já tem cadastro?
-                            <Link  href="/login">
+                            <Link  href="/Login">
                                 <span className={styles.link}>Faça login!</span>
                             </Link>
                         </span>
@@ -40,6 +47,7 @@ export default function Registrar(){
                             <input type="text" placeholder="Email" className={styles.field} onChange={event => setEmail(event.target.value)}/>
                             <input type="text" placeholder="Nome" className={styles.field} onChange={event => setNome(event.target.value)}/>
                             <input type="password" placeholder="Senha" className={styles.field} onChange={event => setSenha(event.target.value)}/>
+                            { tipo ? <input type="text" placeholder="Matrícula" className={styles.field} onChange={event => setMatricula(event.target.value)}/> : null}
                             <div>
                                 <div>
                                     <input type="radio" checked={tipo} onChange={event => setTipo(true)}/>
