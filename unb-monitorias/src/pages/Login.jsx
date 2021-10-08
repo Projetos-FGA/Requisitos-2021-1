@@ -32,7 +32,7 @@ export default function Login(){
                         <h1 className={styles.title}>Faça Login aqui!</h1>
                         <span className={styles.subTitle}>
                             Ainda não tem cadastro?
-                            <Link  href="/registrar">
+                            <Link  href="/Registrar">
                                 <span className={styles.link}>Registre-se!</span>
                             </Link>
                         </span>

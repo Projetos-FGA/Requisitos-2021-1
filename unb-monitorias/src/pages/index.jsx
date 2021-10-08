@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Home from './Home'
 
 export default function Index() {
   return (
@@ -7,14 +8,8 @@ export default function Index() {
         <title>UnbMonitorias</title>
         <meta name="description" content="Unb Monitorias" />
       </Head>
+    <Home />
 
-      {/* <Navbar></Navbar>
-
-      <main className={styles.main}>
-        <Home></Home>
-      </main>
-
-      <Footer></Footer> */}
     </div>
   )
 }

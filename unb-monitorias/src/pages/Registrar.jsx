@@ -39,7 +39,7 @@ export default function Registrar(){
                         <h1 className={styles.title}>Cadastre-se aqui!</h1>
                         <span className={styles.subTitle}>
                             Já tem cadastro?
-                            <Link  href="/login">
+                            <Link  href="/Login">
                                 <span className={styles.link}>Faça login!</span>
                             </Link>
                         </span>

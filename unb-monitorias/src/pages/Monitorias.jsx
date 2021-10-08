@@ -28,7 +28,8 @@ export default function Monitorias(){
             .from('monitoria')
             .select('*')
             .then(response => setMonitorias(response.body))
-    }, [user])
+
+    }, [])
 
 
     return (
