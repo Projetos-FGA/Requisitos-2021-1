@@ -6,6 +6,8 @@ import { supabase } from '../utils/supabaseClient';
 import React, { useEffect, useState } from "react";
 import { useContext } from 'react'
 import { AuthContext } from "../contexts/AuthContext";
+import { faPlus } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Monitorias(){
     const[ isAluno, setIsAluno] = useState(true)
@@ -29,7 +31,12 @@ export default function Monitorias(){
                          !usuario.isAluno ?
                              <div className={styles.header}>
                                  <span className={styles.spacer}></span>
-                                 <Link href="/AdicionarMonitoria"><button className={styles.btnAdicionar}>Adicionar Monitoria</button></Link>
+                                 <Link href="/AdicionarMonitoria">
+                                    <button className={styles.btnAdicionar}>
+                                        <FontAwesomeIcon icon={faPlus} className={styles.icon}/>
+                                        <span>Adicionar</span>
+                                    </button>
+                                </Link>
                              </div>
                              : null
                          ) : null
@@ -37,7 +44,7 @@ export default function Monitorias(){
                     <div className={styles.cards}>
                         {
                             monitorias.map((monitoria, index) => {
-                                return <Monitoria key={index} monitoria={monitoria} isProfessor={ usuario ? !usuario.isAluno : false}></Monitoria>
+                                return <Monitoria key={index} monitoria={monitoria} isProfessor={ usuario ? !usuario.isAluno : false} usuario={usuario} ></Monitoria>
                             })
                         }
                     </div>

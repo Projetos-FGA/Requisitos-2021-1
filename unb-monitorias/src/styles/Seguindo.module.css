@@ -32,8 +32,8 @@
     padding: 5px 10px;
     cursor: pointer;
     border: none;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    background-color: #000;
+    color: white;
     transition: 0.7s all ease;
     -webkit-transition: 0.7s all ease;
     -moz-transition: 0.7s all ease;
@@ -42,7 +42,7 @@
 }
 
 .btnAdicionar:hover {
-    background-color: #c7c7c7c2;
+    background-color: #000000c2;
     transition: 0.7s all ease;
     -webkit-transition: 0.7s all ease;
     -moz-transition: 0.7s all ease;

@@ -22,7 +22,7 @@ export default function AdicionarMonitoria(){
             .insert([
                 { codigo: codigo, nome: nome, professor: professor, descricao: descricao, vagas: vagas },
             ])
-            router.push("/monitorias").then(
+            router.push("/Monitorias").then(
                 setTimeout(()=>window.location.reload(),500)
             )
         } catch (error) {
@@ -33,7 +33,7 @@ export default function AdicionarMonitoria(){
         <Layout>
              <div className={styles.main}>
                     <div className={styles.card}>
-                        <h1 className={styles.title}>Cria uma nova monitoria!</h1>
+                        <h1 className={styles.title}>Criar uma nova monitoria!</h1>
                         <div className={styles.fields}>
                             <input type="text" placeholder="Código da disciplina" className={styles.field} onChange={event => setCodigo(event.target.value)}/>
                             <input type="text" placeholder="Nome da disciplina" className={styles.field} onChange={event => setNome(event.target.value)}/>

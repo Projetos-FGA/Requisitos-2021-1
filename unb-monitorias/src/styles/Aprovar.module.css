@@ -1,21 +1,33 @@
+.main {
+    min-height: 87vh;
+    padding: 20px;
+    position: relative;
+    background-color: transparent;
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
 .card {
     background-color: #ebebeb;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.541);
     display: flex;
     flex-direction: column;
-    border-radius: 3px;
-    /*align-items: center;
-    justify-content: center;
-    */padding: 5px 5px 10px 20px;
+    /* align-items: center; 
+    justify-content: center; */
+    padding: 5px 5px 10px 20px;
     margin: 20px;
-    min-width: 300px;
-    max-width: 300px;
-    min-height: 120px;
-    max-height: 120px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
+    min-width: fit-content;
+    max-width: 400px;
+    min-height: fit-content;
+    max-height: 300px;
 }
 
 .topo {
@@ -26,54 +38,6 @@
 .spacer {
     flex: 1 1 auto;
 }
-
-.btnApagar {
-    cursor: pointer;
-    border: none;
-    background-color: rgb(235, 67, 67);
-    color: white;
-    height: 30px;
-    padding: 0px 10px 0px 10px;
-    transition: 0.7s all ease;
-    -webkit-transition: 0.7s all ease;
-    -moz-transition: 0.7s all ease;
-    -ms-transition: 0.7s all ease;
-    -o-transition: 0.7s all ease;
-}
-
-.btnApagar:hover {
-    background-color: rgba(235, 67, 67, 0.603);
-    transition: 0.7s all ease;
-    -webkit-transition: 0.7s all ease;
-    -moz-transition: 0.7s all ease;
-    -ms-transition: 0.7s all ease;
-    -o-transition: 0.7s all ease;
-}
-
-.btnDetalhar {
-    margin-right: 5px;
-    cursor: pointer;
-    border: none;
-    background-color: rgb(0, 0, 0);
-    color: white;
-    height: 30px;
-    padding: 0px 10px 0px 10px;
-    transition: 0.7s all ease;
-    -webkit-transition: 0.7s all ease;
-    -moz-transition: 0.7s all ease;
-    -ms-transition: 0.7s all ease;
-    -o-transition: 0.7s all ease;
-}
-
-.btnDetalhar:hover {
-    background-color: rgba(0, 0, 0, 0.473);
-    transition: 0.7s all ease;
-    -webkit-transition: 0.7s all ease;
-    -moz-transition: 0.7s all ease;
-    -ms-transition: 0.7s all ease;
-    -o-transition: 0.7s all ease;
-}
-
 
 .btnSeguir {
     margin-right: 5px;
@@ -100,6 +64,7 @@
 }
 
 .btnNaoSeguir {
+    margin-left: 20px;
     margin-right: 5px;
     cursor: pointer;
     border: none;
@@ -129,6 +94,7 @@
 }
 
 .nome {
+    margin: 5px;
     margin-left: 10px;
     font-weight: 200;
 }

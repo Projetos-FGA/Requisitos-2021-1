@@ -17,9 +17,7 @@ export default function Login(){
                 email: email,
                 password: senha
             })
-            if(response.user) router.push("/Monitorias").then(
-                setTimeout(()=>window.location.reload(),500)
-            )
+            if(response.user) router.push("/Monitorias")
         } catch (error) {
             console.log(error)
         }

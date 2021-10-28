@@ -1,41 +1,79 @@
 import styles from "../styles/Monitoria.module.css"
-import React, { useEffect, useState } from "react";
-import Modal from "./Modal";
-import Monitor from "../components/Monitor"
-
+import Link from 'next/link'
+import { supabase } from '../utils/supabaseClient';
+import { useRouter } from 'next/router'
+import { useContext } from 'react'
+import { AuthContext } from "../contexts/AuthContext";
+import { faEye } from '@fortawesome/free-solid-svg-icons'
+import { faEyeSlash } from '@fortawesome/free-solid-svg-icons'
+import { faInfo } from '@fortawesome/free-solid-svg-icons'
+import { faTrash } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import React, { useEffect, useState } from "react"
 
 export default function Monitoria(props){
-    const [showModal, setShowModal] = useState(false)
+    const[ sigo, setSigo] = useState(false)
     const isProfessor = props.isProfessor
-    const monitores = [
-        // {
-        //    nome: 'Henrique',
-        //    matricula: '170144488',
-        //    horario: '17h-18h', 
-        // },
-        {
-            nome: 'Flávio',
-            matricula: '150255882',
-            horario: '14h-20h', 
-         },
-         {
-            nome: 'Carla',
-            matricula: '170012355',
-            horario: '17h-19h', 
-         },
-         {
-            nome: 'Mateus',
-            matricula: '180167899',
-            horario: '12h-13h', 
-         },
-         {
-            nome: 'Igor',
-            matricula: '160199988',
-            horario: '15h-16h', 
-         },
-    ]
-    function apagar() {
-        //metodo para apagar uma monitoria
+    const router = useRouter()
+    const { usuario } = useContext(AuthContext)
+    useEffect(() => {
+         sigoMonitoria()
+    }, [])
+
+    async function seguir() {
+        try {
+            await supabase
+            .from('seguir')
+            .insert([
+                { idUsuario: props.usuario.id, idMonitoria: props.monitoria.id },
+            ])
+            // setTimeout(()=>window.location.reload(),800)
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
+    async function deixarSeguir() {
+        try {
+            await supabase
+            .from('seguir')
+            .delete()
+            .match({'idUsuario': usuario.id, 'idMonitoria': props.monitoria.id})
+            // setTimeout(()=>window.location.reload(),800)
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
+     // eslint-disable-next-line react-hooks/exhaustive-deps
+     async function sigoMonitoria() {
+         if(usuario && usuario.id){
+            const { data } = await supabase
+            .from('seguir')
+            .select('*')
+            .match({idMonitoria: props.monitoria.id, idUsuario: usuario.id})
+            if(data && data[0]){
+                setSigo(true)
+            } else setSigo(false)
+         }
+    }
+
+    async function apagar() {
+        try {
+            await supabase
+            .from('monitoria')
+            .delete()
+            .eq('id', props.monitoria.id)
+            router.push("/Monitorias").then(
+                setTimeout(()=>window.location.reload(),800)
+            )
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
+    function setarMonitoriaSelecionada(){
+        localStorage.setItem('idMonitoriaSelecionada', props.monitoria.id)
     }
 
     return(
@@ -43,47 +81,30 @@ export default function Monitoria(props){
             <div className={styles.topo}>
                 <h4 className={styles.codigo}>{props.monitoria.codigo}</h4>
                 <span className={styles.spacer}></span>
-                <button className={styles.btnDetalhar} onClick={() => {setShowModal(true)}}>Detalhar</button>
-                {isProfessor ?  <button className={styles.btnApagar} onClick={apagar}>Apagar</button> : <></>}
+                <Link href={{ pathname: '/Detalhe'}}>
+                    <button className={styles.btnDetalhar} onClick={setarMonitoriaSelecionada}>
+                        <FontAwesomeIcon icon={faInfo} className={styles.icon}/>
+                        <span>Detalhar</span>
+                    </button>
+                </Link>
+                {!isProfessor ?
+                    sigo ?
+                    <button className={styles.btnNaoSeguir} onClick={deixarSeguir}>
+                        <FontAwesomeIcon icon={faEyeSlash} className={styles.icon}/>
+                        <span>Unfollow</span>
+                    </button>
+                    :
+                    <button className={styles.btnSeguir} onClick={seguir}>
+                        <FontAwesomeIcon icon={faEye} className={styles.icon}/>
+                        <span>Follow</span>
+                    </button>
+                : null}
+                {isProfessor ?  <button className={styles.btnApagar} onClick={apagar}>
+                    <FontAwesomeIcon icon={faTrash} className={styles.icon}/>
+                    <span>Apagar</span>
+                </button> : <></>}
             </div>
             <span className={styles.nome}>{props.monitoria.nome}</span>
-            <Modal titulo="Detalhe da Monitoria" show={showModal} onClose={() => setShowModal(false)}>
-                <div className={styles.content}>
-                    <div className={styles.left}>
-                        <div className={styles.field}>
-                            <h4 className={styles.fieldTitle}>Código: </h4>
-                            <span>{props.monitoria.codigo}</span>
-                        </div>
-                        <div className={styles.field}>
-                            <h4 className={styles.fieldTitle}>Disciplina: </h4>
-                            <span>{props.monitoria.nome}</span>
-                        </div>
-                    </div>
-                    <div className={styles.right}>
-                        <div className={styles.field}>
-                            <h4 className={styles.fieldTitle}>Descrição: </h4>
-                            <span>{props.monitoria.descricao}</span>
-                        </div>
-                        <div className={styles.field}>
-                            <h4 className={styles.fieldTitle}>Professor: </h4>
-                            <span>{props.monitoria.professor}</span>
-                        </div>
-                    </div>
-                </div>
-                <div className={styles.listaMonitores}>
-                    <h4 className={styles.fieldTitle}>Lista de Monitores</h4>
-                    <ul className={styles.monitores}>
-                        {
-                            monitores.map((monitor, index) => {
-                                return <Monitor key={index} monitor={monitor} isProfessor={isProfessor}></Monitor>
-                            })
-                        }
-                    </ul>
-                </div>
-                {!isProfessor ? 
-                    <button className={styles.btnCadastrar}>Inscrever-me</button>
-                : <></>}
-            </Modal>
         </div>
     )
 }

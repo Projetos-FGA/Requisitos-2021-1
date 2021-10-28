@@ -25,9 +25,7 @@ export default function Registrar(){
           { isAluno: tipo, nome: nome, idAuth: result.user.id, matricula: matricula },
         ])
         if(res){
-            router.push("/Monitorias").then(
-                setTimeout(()=>window.location.reload(),500)
-            )
+            router.push("/Monitorias")
         }
       }
     }
