@@ -389,15 +389,32 @@ Com base na avaliação elaborada é possível definir o risco e as prioridades 
 <p align="center">  <img src="../imgs/canvas_3.jpg" width="400"></p>
 
 ### **10. Product Backlog Building**
+<p align="center">  <img src="../imgs/pbb1.jpg" width="800"></p>
+<p align="center">  <img src="../imgs/pbb2.jpg" width="800"></p>
+<p align="center">  <img src="../imgs/pbb3.jpg" width="800"></p>
+<p align="center">  <img src="../imgs/pbb4.jpg" width="800"></p>
+<p align="center">  <img src="../imgs/pbb5.jpg" width="800"></p>
+<p align="center">  <img src="../imgs/pbb6.jpg" width="800"></p>
+<p align="center">  <img src="../imgs/pbb7.jpg" width="800"></p>
 
-O PBB foi atualizado e pode ser acessado por meio do link: (<https://miro.com/app/board/o9J_lxnn4Xk=/>).
+O PBB pode ser acessado por meio do link: https://miro.com/app/board/o9J_lxnn4Xk=/
 
 ### **11. Behavior Driven Development**
 
-O BDD foi atualizado e  pode ser acessado por meio do link:
+<p align="center">  <img src="../imgs/bdd1.jpg" width="800"></p>
+<p align="center">  <img src="../imgs/bdd2.jpg" width="800"></p>
+
+O BDD pode ser acessado por meio do link:
 https://docs.google.com/spreadsheets/d/1p5PFOIWalxLjYE1ZU4GKgToYUsrGc0QLDhuB_LaQ1WM/edit#gid=0
 
 ### **12. User story map**
+
+<p align="center">  <img src="../imgs/usm1.jpg" width="800"></p>
+<p align="center">  <img src="../imgs/usm2.jpg" width="800"></p>
+<p align="center">  <img src="../imgs/usm3.jpg" width="800"></p>
+<p align="center">  <img src="../imgs/usm4.jpg" width="800"></p>
+<p align="center">  <img src="../imgs/usm5.jpg" width="800"></p>
+<p align="center">  <img src="../imgs/usmex.jpg" width="800"></p>
 
 O user story map pode ser acessado por meio do link: https://miro.com/app/board/o9J_lrmSLiw=/
 
