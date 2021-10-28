@@ -12,19 +12,15 @@ export default function Login(){
     const router = useRouter()
 
     async function fazerLogin() {
-        console.log(email, senha)
-        const result = await supabase.auth.signIn({
-            email: email,
-            password: senha
-          })
-          if(result.user){
-              console.log('qui')
-            router.push("/Monitorias").then(
-                setTimeout(()=>{
-                    window.location.reload()
-                },500)
-            )
-          }
+        try {
+            const response = await supabase.auth.signIn({
+                email: email,
+                password: senha
+            })
+            if(response.user) router.push("/Monitorias")
+        } catch (error) {
+            console.log(error)
+        }
     }
 
     return (
@@ -34,7 +30,7 @@ export default function Login(){
                         <h1 className={styles.title}>Faça Login aqui!</h1>
                         <span className={styles.subTitle}>
                             Ainda não tem cadastro?
-                            <Link  href="/Registrar">
+                            <Link href="/Registrar">
                                 <span className={styles.link}>Registre-se!</span>
                             </Link>
                         </span>
@@ -43,12 +39,6 @@ export default function Login(){
                             <input type="password" placeholder="Senha" className={styles.field} onChange={event => setSenha(event.target.value)}/>
                         </div>
                         <button className={styles.btnEntrar} onClick={fazerLogin}>Entrar</button>
-                        {/* <div className={styles.divider}>
-                            <span className={styles.dividerLine}></span>
-                            <span> ou </span>
-                            <span className={styles.dividerLine}></span>
-                        </div>
-                        <button className={styles.btnGoogle}>Login com Google+</button> */}
                     </div>
                 </div>
             </Layout>

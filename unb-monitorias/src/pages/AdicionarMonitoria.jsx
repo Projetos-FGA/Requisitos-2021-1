@@ -2,6 +2,8 @@ import styles from '../styles/AdicionarMonitoria.module.css'
 import Layout from '../components/Layout.jsx'
 import React, { useEffect, useState } from "react";
 import { supabase } from '../utils/supabaseClient';
+import { useRouter } from 'next/router'
+
 
 export default function AdicionarMonitoria(){
 
@@ -10,16 +12,19 @@ export default function AdicionarMonitoria(){
     const [professor, setProfessor] = useState('')
     const [descricao, setDescricao] = useState('')
     const [vagas, setVagas] = useState('')
+    const router = useRouter()
 
     async function criarMonitoria(){
         console.log(codigo, nome, professor, descricao, vagas)
         try {
-            const result = await supabase
+            await supabase
             .from('monitoria')
             .insert([
                 { codigo: codigo, nome: nome, professor: professor, descricao: descricao, vagas: vagas },
             ])
-            console.log(result)
+            router.push("/Monitorias").then(
+                setTimeout(()=>window.location.reload(),500)
+            )
         } catch (error) {
             console.log(error)
         }
@@ -28,7 +33,7 @@ export default function AdicionarMonitoria(){
         <Layout>
              <div className={styles.main}>
                     <div className={styles.card}>
-                        <h1 className={styles.title}>Cria uma nova monitoria!</h1>
+                        <h1 className={styles.title}>Criar uma nova monitoria!</h1>
                         <div className={styles.fields}>
                             <input type="text" placeholder="Código da disciplina" className={styles.field} onChange={event => setCodigo(event.target.value)}/>
                             <input type="text" placeholder="Nome da disciplina" className={styles.field} onChange={event => setNome(event.target.value)}/>

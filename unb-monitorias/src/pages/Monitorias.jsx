@@ -6,19 +6,14 @@ import { supabase } from '../utils/supabaseClient';
 import React, { useEffect, useState } from "react";
 import { useContext } from 'react'
 import { AuthContext } from "../contexts/AuthContext";
-
-// async function getTipoUsuario() {
-//     if(user){
-//         const usuario = await supabase.from('usuario').select('*').eq('idAuth', user.id)
-//         console.log(usuario)
-//         return true
-//     } else return false
-// }
+import { faPlus } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Monitorias(){
+    const[ isAluno, setIsAluno] = useState(true)
     const[ monitorias, setMonitorias] = useState([])
     const { user } = useContext(AuthContext)
-    const isProfessor = true
+    const { usuario } = useContext(AuthContext)
 
     useEffect(() => {
         supabase
@@ -26,22 +21,30 @@ export default function Monitorias(){
             .select('*')
             .then(response => setMonitorias(response.body))
 
-    }, [])
+    }, [user])
 
 
     return (
             <Layout>
                 <div className={styles.main} id="modal-root">
-                    {isProfessor ?
-                        <div className={styles.header}>
-                            <span className={styles.spacer}></span>
-                            <Link href="/AdicionarMonitoria"><button className={styles.btnAdicionar}>Adicionar Monitoria</button></Link>
-                        </div>
-                        : null }
+                    { usuario ? (
+                         !usuario.isAluno ?
+                             <div className={styles.header}>
+                                 <span className={styles.spacer}></span>
+                                 <Link href="/AdicionarMonitoria">
+                                    <button className={styles.btnAdicionar}>
+                                        <FontAwesomeIcon icon={faPlus} className={styles.icon}/>
+                                        <span>Adicionar</span>
+                                    </button>
+                                </Link>
+                             </div>
+                             : null
+                         ) : null
+                      }
                     <div className={styles.cards}>
                         {
                             monitorias.map((monitoria, index) => {
-                                return <Monitoria key={index} monitoria={monitoria} isProfessor={isProfessor}></Monitoria>
+                                return <Monitoria key={index} monitoria={monitoria} isProfessor={ usuario ? !usuario.isAluno : false} usuario={usuario} ></Monitoria>
                             })
                         }
                     </div>
